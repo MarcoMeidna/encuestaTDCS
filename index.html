@@ -77,15 +77,20 @@
   <img src="Imagen1.png" alt="Clínica Jesús del Norte">
   <h1>TIEMPOS DORADOS CON SALUD</h1>
 
-  <form id="formulario" method="POST" action="https://script.google.com/macros/s/AKfycbz4nf3Mm4_ZpZEwOSw7Imdk3Vd0OhH5kHgDmCdL8-MiS1AX3WdPqtE1uliWUL9XpNdOhg/exec">
+  <form id="formulario" method="POST" action="https://script.google.com/macros/s/AKfycbyL2qyDss9eKZjojs40RAoGLfNuVd0b32wpuML5dUEoNon8Go-mq_wsMyvUzrBPA9pGMg/exec">
 
     <div class="form-row">
-      <label for="Edad">1) Edad:</label>
+      <label for="DNI">1) DNI:</label>
+      <input type="text" id="DNI" name="DNI" maxlength="8" required>
+    </div>    
+
+    <div class="form-row">
+      <label for="Edad">2) Edad:</label>
       <input type="text" id="Edad" name="Edad" pattern="\d{2,3}" maxlength="3" required>
     </div>
 
     <div class="form-row">
-      <label for="especialidad">2) Especialidad:</label>
+      <label for="especialidad">3) Especialidad:</label>
       <input list="especialidades" id="especialidad" name="especialidad" class="input-text" required>
       <datalist id="especialidades">
         <option value="ALERGISTA">
@@ -131,7 +136,7 @@
     </div>
 
     <div class="form-row">
-      <label for="medio">3) ¿Por qué medio te enteraste del programa?</label>
+      <label for="medio">4) ¿Por qué medio te enteraste del programa?</label>
       <select id="medio" name="medio" required>
         <option value="">Seleccione una opción</option>
         <option value="Pagina web">Página web</option>
@@ -142,7 +147,7 @@
     </div>
 
     <div class="form-row">
-      <label for="responsable">4) Responsable:</label>
+      <label for="responsable">5) Responsable:</label>
       <select id="responsable" name="responsable" required>
         <option value="">Seleccione una opción</option>
         <option value="Plan familiar">Plan familiar</option>
